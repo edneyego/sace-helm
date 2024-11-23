@@ -7,6 +7,7 @@ services:
       - 8080:8080
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    restart: on-failure
 
   sace:
     image: docker.io/edneyego/sace:latest
@@ -35,6 +36,7 @@ services:
     image: ndscprm/geoserver:2.24.4-test
     platform: linux/amd64
     user: '1000'  # Trocar pelo UID da máquina do dev
+    restart: on-failure
     networks:
       - default
     volumes:
