@@ -1,0 +1,17 @@
+<layer>
+  <name>Bacia</name>
+  <id>LayerInfoImpl--14bd7206:193bbfa987c:-7ff6</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-21447cd1:193bc32730c:-7e1e</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--14bd7206:193bbfa987c:-7ff7</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-12-12 18:02:02.568 UTC</dateCreated>
+  <dateModified>2024-12-12 19:20:29.815 UTC</dateModified>
+</layer>

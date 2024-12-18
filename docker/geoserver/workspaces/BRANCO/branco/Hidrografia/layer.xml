@@ -1,0 +1,16 @@
+<layer>
+  <name>Hidrografia</name>
+  <id>LayerInfoImpl--14bd7206:193bbfa987c:-7ff3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-7f4897d6:1932bdd26b1:-7fff</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--14bd7206:193bbfa987c:-7ff4</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2024-12-12 18:02:26.652 UTC</dateCreated>
+</layer>
