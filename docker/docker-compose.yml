@@ -7,24 +7,24 @@ services:
       - 8080:8080
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-    restart: on-failure
+    restart: unless-stopped
 
   sace:
-    image: docker.io/edneyego/sace:latest
-    restart: always
+    image: docker.io/edneyego/sace:testing    
+    restart: unless-stopped
     user: '1000'  # Trocar pelo UID da máquina do dev
     environment:
       JAVA_XMX: 3096
       JAVA_XMS: 2098
-      JDBC_URL: jdbc:postgresql://db:5432/${POSTGRES_DB}
+      JDBC_URL: jdbc:postgresql://db:5432/branco
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASS: ${POSTGRES_PASSWORD}
-      workspaceGeoserver: ARAGUAIA
+      workspaceGeoserver: BRANCO
       urlGeoserver: ${SACE_PROTO}://${SACE_HOST}:${SACE_PORT}/geoserver
-      boundMap: "new OpenLayers.Bounds(-65\\,-2\\,-59\\,6)"
-      ativarAgendamentos: false
-      ativarRecuperacoes: false
-      nomeSistema: Bacia do ARAGUAIA
+      boundMap: new OpenLayers.Bounds(-65, -2, -59, 6)
+      ativarAgendamentos: true
+      ativarRecuperacoes: true
+      nomeSistema: Bacia do Rio Branco
       imageDir: ${IMAGE_DIR}
       urlSistema: ${SACE_PROTO}://${SACE_HOST}:${SACE_PORT}/sace-web
     networks:
