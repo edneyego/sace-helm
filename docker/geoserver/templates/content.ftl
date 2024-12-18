@@ -13,26 +13,26 @@
 			<tr>
 				<td width="50" align="center" style="text-align: center;">
 					<a href="#" onclick="visualizarUltimoBoletimIdentity();">
-						<img src="../www/boletim.png" alt="Último boletim" width="30"
+						<img src="/geoserver/www/boletim.png" alt="Último boletim" width="30"
 							height="25" border="0" /></a><br>
 					&Uacute;ltimo boletim
 				</td>
 				<td width="50" align="center" style="text-align: center;">
 					<a href="#" onclick="verDadosIdentity(${feature.id_ponto_monitoramento.value});">
-						<img src="../www/info.png" alt="Último boletim" width="30"
+						<img src="/geoserver/www/info.png" alt="Último boletim" width="30"
 							height="25" border="0" /></a><br>
 					Ver dados
 				</td>
 				<td width="45" align="center" style="text-align: center;">
 					<a href="#" onclick="visualizarTemplateGraficoIdentity(${feature.id_ponto_monitoramento.value});">
-						<img src="../www/chart.png" alt="Grafico" width="30"
+						<img src="/geoserver/www/chart.png" alt="Grafico" width="30"
 							height="25" border="0" /></a>
 					<br>
 					Gr&aacute;fico
 				</td>
 				<td width="45" align="center" style="text-align: center;">
 					<a href="#" onclick="abreAnexosPontoMonitoramento(${feature.id_ponto_monitoramento.value});">
-						<img src="../www/download.png" alt="Anexos" width="30"
+						<img src="/geoserver/www/download.png" alt="Anexos" width="30"
 							height="25" border="0" /></a>
 					<br>
 					Anexos
